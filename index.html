@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudBites Kitchen</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+scroll-behavior:smooth;
+}
+
+/* TOP OFFER */
+.top-offer{
+background:#ff4d4d;
+color:white;
+padding:8px 0;
+font-weight:bold;
+text-align:center;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo span{
+color:#ff4d4d;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:15px;
+}
+
+nav a:hover{
+color:#ff4d4d;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") no-repeat center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-text{
+background:rgba(0,0,0,0.6);
+padding:50px;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:#ff4d4d;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#e63939;
+}
+
+/* SECTION */
+.menu-section{
+padding:70px 60px;
+text-align:center;
+}
+
+.menu-section h2{
+margin-bottom:40px;
+font-size:32px;
+color:#ff4d4d;
+}
+
+/* CARDS */
+.card-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+background:white;
+width:240px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px 0 5px;
+text-align:center;
+}
+
+.card p{
+color:#ff4d4d;
+font-weight:bold;
+margin-bottom:15px;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px 20px;
+margin-top:40px;
+}
+
+footer a{
+color:#ff4d4d;
+text-decoration:none;
+margin:0 5px;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+.card-container{
+flex-direction:column;
+align-items:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div class="logo">
+🌥 <span>CloudBites</span> Kitchen
+</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#breakfast">Breakfast</a></li>
+<li><a href="#veg">Veg</a></li>
+<li><a href="#nonveg">Non-Veg</a></li>
+<li><a href="#snacks">Snacks</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- TOP MARQUEE OFFER -->
+<div class="top-offer">
+<marquee behavior="scroll" direction="left" scrollamount="6">
+🔥 Offers available in 2 days! Don’t miss these amazing deals! Order now and enjoy special discounts! 🔥
+</marquee>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="home">
+<div class="hero-text">
+<h1>Fresh • Fast • Flavorful</h1>
+<p>Delicious food delivered to your doorstep</p>
+<a href="#breakfast" class="btn">Explore Menu</a>
+</div>
+</header>
+
+<!-- BREAKFAST -->
+<section class="menu-section" id="breakfast">
+<h2>Breakfast Specials</h2>
+<div class="card-container">
+<div class="card"><img src="https://myfoodstory.com/wp-content/uploads/2025/08/Dosa-Recipe-2.jpg"><h3>Masala Dosa</h3><p>₹120</p></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ447IU-D5Z6zFMeMia0p_rYBnw7QJ7Qc-PhQ&s"><h3>Idli Sambar</h3><p>₹80</p></div>
+<div class="card"><img src="https://www.yummytummyaarthi.com/wp-content/uploads/2022/11/red-sauce-pasta-1-500x500.jpg"><h3>Pasta</h3><p>₹110</p></div>
+<div class="card"><img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/06/Best-South-Indian-Rava-Upma-Recipe.jpg"><h3>Upma</h3><p>₹90</p></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4VCCVMK0ia9XeUTf9965E2dgpsN27bVNOfg&s"><h3>Puri</h3><p>₹150</p></div>
+</div>
+</section>
+
+<!-- VEG -->
+<section class="menu-section" id="veg">
+<h2>Veg Specials</h2>
+<div class="card-container">
+<div class="card"><img src="https://www.madhuseverydayindian.com/wp-content/uploads/2022/11/easy-vegetable-biryani.jpg"><h3>Veg Biryani</h3><p>₹199</p></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6GMD_WH9sl6HjJ4CObB9Lim-51zBji9n5KA&s"><h3>Paneer Butter Masala</h3><p>₹249</p></div>
+<div class="card"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiZn5pXvKnz_g5MqHfXIjGQHcqQPKgolHL4XQBwdld4N-kVHN-"><h3>Veg Meals Combo</h3><p>₹179</p></div>
+<div class="card"><img src="https://www.a2zshoppy.com/media/image?path=uploads/media/2025/babycorn65_a2z_shoppy.jpg&width=800&quality=80"><h3>Baby Corn 65</h3><p>₹160</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"><h3>Mixed Veg Curry</h3><p>₹189</p></div>
+</div>
+</section>
+
+<!-- NON VEG -->
+<section class="menu-section" id="nonveg">
+<h2>Non-Veg Delights</h2>
+<div class="card-container">
+<div class="card"><img src="https://sarigamagrand.com/wp-content/uploads/2023/11/SG-FM-098-1024x1024.webp"><h3>RagiMudda-Chicken Curry</h3><p>₹299</p></div>
+<div class="card"><img src="https://lh5.googleusercontent.com/proxy/fm5qZsQ1nm8HztsfW92BSx3XQKt1tl2miFs7fXnbRmwE5bmIR3ADNRXrG0h6fpcNpkggOK684pAHz0bkpBZTvZLVj8bIwot0-h0aDsU"><h3>Mutton Curry</h3><p>₹229</p></div>
+<div class="card"><img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPQXFO4B201Ry8o7_Soa7dwhJBrtcwJdE0w&s"><h3>Chicken Biryani</h3><p>₹279</p></div>
+<div class="card"><img src="https://static01.nyt.com/images/2020/03/04/dining/tr-egg-curry/merlin_169211805_227972c0-43d1-4f25-9643-9568331d8adb-mediumSquareAt3X.jpg"><h3>Egg Masala Curry</h3><p>₹349</p></div>
+<div class="card"><img src="https://i.ytimg.com/vi/MVpNTY9mNBU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAPp9C6S6_sHqbtlEgvhLTxywB7pQ"><h3>Prawns Fry</h3><p>₹320</p></div>
+</div>
+</section>
+
+<!-- SNACKS -->
+<section class="menu-section" id="snacks">
+<h2>Snacks & Quick Bites</h2>
+<div class="card-container">
+<div class="card"><img src="https://cookingfromheart.com/wp-content/uploads/2020/05/Mirapakaya-Bajji-2.jpg"><h3>Mirchi Bajji</h3><p>₹129</p></div>
+<div class="card"><img src="https://thecozycook.com/wp-content/uploads/2020/02/Copycat-McDonalds-French-Fries-.jpg"><h3>French Fries</h3><p>₹99</p></div>
+<div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Pani_Puri1.JPG/1280px-Pani_Puri1.JPG"><h3>Pani Puri</h3><p>₹149</p></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFPP0wyCOQefudUz7vjo9QtLIXPz9BWoY_g&s"><h3>Samosa</h3><p>₹180</p></div>
+<div class="card"><img src="https://rrtravelscabs.com/wp-content/uploads/2023/11/pexels-aditya-mara-17433337-1024x819.jpg"><h3>Vada Pav</h3><p>₹159</p></div>
+</div>
+</section>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contact">
+<p>© 2026 CloudBites-Kitchen <br>
+Delivering fresh, organic, and delicious homemade food and 24/7 service is avaible<br>
+Order Now: +91 9876543210</p>
+<p>
+<a href="#">Instagram</a> |
+<a href="#">Facebook</a> |
+<a href="#">WhatsApp</a>
+</p>
+</footer>
+
+</body>
+</html>
